@@ -1,0 +1,107 @@
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Website name</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Work hours sheet</a></li>
+        <li><a href="#">Another page</a></li>
+        <li class="disabled"><a href="#">Edit projects</a></li>
+        <li class="dropdown pull-right">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Juho Häkkinen
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+        <!-- Log In btn
+        <li class="pull-right"><p class="navbar-btn"><a href="#" class="btn btn-info" role="button">Log In</a></p></li>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="bg-info p-wrapper">
+    <p>(If you've worked on several projects during a specific day, mark the same date on the next row and fill the hours of the second project in there. Add rows as needed.)</p>
+  </div>
+  <table class="table table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Project name</th>
+        <th>Work done in project</th>
+        <th>Start</th>
+        <th>End</th>
+        <th><p>Hours</p></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="date" class="form-control" /></td>
+        <td>
+          <select class="form-control">
+            <option>VR project</option>
+            <option>LISP compiler</option>
+            <option>Vegfest website</option>
+            <option>GIMP extension</option>
+          </select>
+        </td>
+        <td><input type="text" class="form-control" value="Implementing movement tracker" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="text" class="form-control" /></td>
+      </tr>
+
+      <tr>
+        <td><input type="date" class="form-control" /></td>
+        <td>
+          <select class="form-control">
+            <option>VR project</option>
+            <option>LISP compiler</option>
+            <option>Vegfest website</option>
+            <option>GIMP extension</option>
+          </select>
+        </td>
+        <td><input type="text" class="form-control" value="Implementing movement tracker" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="text" class="form-control" /></td>
+      </tr>
+
+      <tr>
+        <td><input type="date" class="form-control" /></td>
+        <td>
+          <select class="form-control">
+            <option>VR project</option>
+            <option>LISP compiler</option>
+            <option>Vegfest website</option>
+            <option>GIMP extension</option>
+          </select>
+        </td>
+        <td><input type="text" class="form-control" value="Implementing movement tracker" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="time" class="form-control" /></td>
+        <td><input type="text" class="form-control" /></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<footer class="footer navbar-fixed-bottom">
+  <div class="container">
+    <p class="text-muted pull-right">the FIRMA 2016</p>
+  </div>
+</footer>
+</body>
