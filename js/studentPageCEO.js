@@ -54,13 +54,15 @@ function getTbodyStringForApprovalsTable(pendingApprovals) {
   var inners = '';
   pendingApprovals.forEach(function(approval) {
     inners += '<tr><td>'+
-              approval.date+
+              approval.month+
               '</td><td>'+
               approval.projectName+
               '</td><td>'+
               approval.workDone+
               '</td><td>'+
               approval.hours+
+              '</td><td>'+
+              Math.floor(approval.hours/hoursPerCredit)+
               '</td><td>'+
               '<button type="button" class="btn btn-success">Approve</button>'+
               '<button type="button" class="btn btn-danger">Reject</button>'+
