@@ -1,12 +1,7 @@
 //TODOs: add confirmation to approve btns
 
-const hoursPerCredit = 27,
-      student = {
-        firstName: 'Roby',
-        lastName: 'Pulthon',
-
-      },
-      projects = [
+const hoursPerCredit = 27;
+      /*projects = [
         {name: 'VR demos website',
          hours: 80},
         {name: 'Report visualizer',
@@ -31,12 +26,12 @@ const hoursPerCredit = 27,
          projectName: projects[0].name,
          workDone: 'Some text, looonger one. Some text, looonger one. Some text, looonger one. Some text, looonger one.',
          hours: 100}
-      ];
+      ];*/
 
 /*
   function declarations
 */
-function getTbodyStringForProjectTable(projects) {
+/*function getTbodyStringForProjectTable(projects) {
   var tbodyInners = '';
   projects.forEach(function(project) {
     tbodyInners += '<tr><td>'+
@@ -70,16 +65,16 @@ function getTbodyStringForApprovalsTable(pendingApprovals) {
   });
 
   return inners;
-}
+}*/
 
 /*
   on ready, main function
 */
 document.addEventListener('DOMContentLoaded', function() {
-  var projectsTbody = document.getElementById('ceo-student-projects-tbody'),
-      approvalsTbody = document.getElementById('pending-approvals-tbody');
+  var totalHours,
+      totalCredits = Math.floor(totalHours/hoursPerCredit),
+      totalHoursElement = document.getElementById('total-hours'),
+      totalCreditsElement = document.getElementById('total-credits');
 
-  projectsTbody.innerHTML = getTbodyStringForProjectTable(projects);
 
-  approvalsTbody.innerHTML = getTbodyStringForApprovalsTable(pendingApprovals);
 }, false);
