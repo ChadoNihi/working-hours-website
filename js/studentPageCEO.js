@@ -71,10 +71,11 @@ function getTbodyStringForApprovalsTable(pendingApprovals) {
   on ready, main function
 */
 document.addEventListener('DOMContentLoaded', function() {
-  var totalHours,
+  var totalHours = 100,
       totalCredits = Math.floor(totalHours/hoursPerCredit),
       totalHoursElement = document.getElementById('total-hours'),
       totalCreditsElement = document.getElementById('total-credits');
 
-
+      totalHoursElement.innerHTML = totalHours;
+      totalCreditsElement.innerHTML = totalCredits;
 }, false);
