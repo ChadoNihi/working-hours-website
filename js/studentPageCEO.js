@@ -74,7 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
   var totalHours = 100,
       totalCredits = Math.floor(totalHours/hoursPerCredit),
       totalHoursElement = document.getElementById('total-hours'),
-      totalCreditsElement = document.getElementById('total-credits');
+      totalCreditsElement = document.getElementById('total-credits'),
+      approveBtns = document.getElementsByClassName('approve-btn'),
+      rejectBtns = document.getElementsByClassName('reject-btn');
 
       totalHoursElement.innerHTML = totalHours;
       totalCreditsElement.innerHTML = totalCredits;
