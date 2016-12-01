@@ -1,8 +1,8 @@
 .table-hover>tbody>tr:hover {
   background-color: #ddf;
 }
-.approve-btn, .reject-btn {
-  margin: 0.3em;
+.reject-btn {
+  margin-right: 1em;
 }
 .info-nav-tab {
   color: #808080;
